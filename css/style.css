@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'agencyb';
+    src: url(/AGENCYB.TTF);
+}
+
+body {
+
+}
+
+menu {
+    height: 100px;
+    padding-top: 17px;
+}
+
+menu > #cont-menu {
+    max-width: 1528.5px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#logo > img {
+    width: 100px;
+    margin-left: 17px;
+}
+
+menu > #cont-menu > ul {
+    display: none;
+    flex-wrap: wrap;
+}
+
+menu > #cont-menu > ul > li {
+    color: white;
+    font-family: 'agencyb';
+    font-size: 27px;
+    padding: 10px;
+}
+
+#menu-borguer {
+    color: white;
+    font-size: 60px;
+    margin-right: 17px;
+}
+
+div#infundo {
+    background-image: url(../image/bacground.jpg);
+    max-width: 1583px;
+    height: 750px;
+    background-position: center;
+}
+
+header {
+    max-width: 1036px;
+    height: 431px;
+    margin: 63px auto;
+    color: white;
+}
+
+header > div#cont-titulo {
+    font-family: 'agencyb';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > #cont-titulo > h2 {
+    font-size: 100px;
+}
+
+header h1 {
+    font-size: 145px;
+}
+
+header h3 {
+    font-size: 100px;
+}
