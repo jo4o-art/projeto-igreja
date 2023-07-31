@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div id="infundo">
+    <div id="infundo-titulo">
         <menu>
             <div id="cont-menu">
                 <div id="logo">
@@ -42,39 +42,60 @@
             <h1>NOSSOS CULTOS</h1>
             <div class="dias">
                 <h2 class="titulo-desc-culto">Domingo</h2>
-                <h3 class="subtitulo-desc-culto">Culto da Família</h3>
+                <div class="subtitulo-dia">
+                    <h3 class="subtitulo-desc-culto">Culto da Família</h3>
+                    <span class="hora">19h30</span>
+                </div>
                 <p class="desc-culto">O culto que reune você e toda sua familía para adorar ao rei dos reis</p>
-                <h3 class="subtitulo-desc-culto">Salinha kids</h3>
+                <div class="subtitulo-dia">
+                    <h3 class="subtitulo-desc-culto">Salinha kids</h3>
+                    <span class="hora">19h30</span>
+                </div>
                 <p class="desc-culto">Um lugar para as crianças do ministério aprenderem sobre a palavra de Deus
                     enquanto seus responsáveis participam do culto.</p>
             </div>
             <div class="dias">
                 <h2 class="titulo-desc-culto">Quarta</h2>
-                <h3 class="subtitulo-desc-culto">Oração</h3>
+                <div class="subtitulo-dia">
+                    <h3 class="subtitulo-desc-culto">Oração</h3>
+                    <span class="hora">19h30</span>
+                </div>
                 <p class="desc-culto">Para todos que precisam lutar por algo, essa é a melhor forma</p>
-                <h3 class="subtitulo-desc-culto">Culto da Vitória</h3>
+                <div class="subtitulo-dia">
+                    <h3 class="subtitulo-desc-culto">Culto da Vitória</h3>
+                    <span class="hora">19h30</span>
+                </div>
                 <p class="desc-culto">O Culto exclusivo para você buscar sua vitória</p>
-                <h3 class="subtitulo-desc-culto">Salinha kids</h3>
+                <div class="subtitulo-dia">
+                    <h3 class="subtitulo-desc-culto">Salinha kids</h3>
+                    <span class="hora">19h30</span>
+                </div>
                 <p class="desc-culto">Um lugar para as crianças do ministério aprenderem sobre a palavra de Deus
                     enquanto seus responsáveis participam do culto.</p>
             </div>
             <div class="dias">
                 <h2 class="titulo-desc-culto">Sexta</h2>
-                <h3 class="subtitulo-desc-culto">Oração</h3>
+                <div class="subtitulo-dia">
+                    <h3 class="subtitulo-desc-culto">Oração</h3>
+                    <span class="hora">19h30</span>
+                </div>
                 <p class="desc-culto">Para todos que precisam lutar por algo,
                     essa é a melhor forma</p>
-                <h3 class="subtitulo-desc-culto">Culto de Liderança</h3>
+                <div class="subtitulo-dia">
+                    <h3 class="subtitulo-desc-culto">Culto de Liderança</h3>
+                    <span class="hora">19h30</span>
+                </div>
                 <p class="desc-culto">Culto para nossos lideres se fortalecerem em sua fé</p>
             </div>
         </div>
         <div id="lideres">
             <h1>NOSSOS LIDERES</h1>
-            <div id="lider">
+            <div class="lideres">
                 <img src="image/luiza-ilustracao.png" alt="luiza-ilustracao">
                 <h2>Pastora Luiza</h2>
                 <p>Pastora, presidente do ministério, lider da igreja</p>
             </div>
-            <div id="vicelider">
+            <div class="lideres">
                 <img src="image/noemia-ilustracao.png" alt="noemia-ilustracao">
                 <h2>Irmã Noêmia</h2>
                 <p>Vice presidente da igreja, lider de mulheres, membro do louvor</p>
@@ -97,16 +118,19 @@
         </div>
         <div id="convite">
             <h1>CONVIDAMOS VOCÊ</h1>
-            <iframe width="574" height="323" src="https://www.youtube.com/embed/t045MhTEOjg"
-                title="Igreja do Evangelho Quadrangular - Missões" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+            <div id="video-convite">
+                <iframe width="470" height="255" src="https://www.youtube.com/embed/t045MhTEOjg"
+                    title="Igreja do Evangelho Quadrangular - Missões" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
         <div id="dizimos">
             <h1>DÍZIMOS E OFERTAS</h1>
             <p>Devouva seu dízimo e entregue sua oferta para o reino de Deus</p>
             <button id="ofertas"><img src="image/enviar-icone.png" alt="icone-enviar">
-                <p>Enviar</p>
+                <p id="enviar">ENVIAR</p>
             </button>
         </div>
         <div id="biblia">
@@ -117,7 +141,8 @@
         <div id="pedidos-de-oracao">
             <h1>PEDIDOS DE ORAÇÃO</h1>
             <p>Está presisando de uma oração? Deixe aqui seu pedido</p>
-            <button id="pedido"><img src="image/pedido-icone.png" alt="pedido-icone">
+            <button id="pedido">
+                <img src="image/pedido-icone.png" alt="pedido-icone">
                 <p>FAZER PEDIDO</p>
             </button>
         </div>
@@ -126,18 +151,18 @@
                 <img src="image/logo-footer.png" alt="logo-footer">
                 <h1>Endereço</h1>
                 <p>Al. Camélia N°000_Cariri_castanhal_
-                    Pará Brasil 68740-000</p>
+                    Pará Brasil 68740-075</p>
                 <p id="telefone"><strong>Telefone:</strong> (91) 9 9999-9999</p>
                 <p id="e-mail"><strong>E-mail:</strong> exemplo@exemplo.com</p>
-                <h1>Nossas redes</h1>
+                <h2>Nossas redes</h2>
                 <img src="image/logo-facebook.png" alt="logo-facebook">
                 <img src="image/logo-insta.png" alt="logo-insta">
             </div>
             <div id="local">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.3874877961775!2d-47.920829684283085!3d-1.3103413688482086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a5a7349c5e5073%3A0xf1084dd7b16e5e22!2sIEQ%20Cariri!5e0!3m2!1spt-BR!2sbr!4v1690673171356!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.3874877961775!2d-47.920829684283085!3d-1.3103413688482086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a5a7349c5e5073%3A0xf1084dd7b16e5e22!2sIEQ%20Cariri!5e0!3m2!1spt-BR!2sbr!4v1690673171356!5m2!1spt-BR!2sbr"width="460" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </footer>
     </main>
