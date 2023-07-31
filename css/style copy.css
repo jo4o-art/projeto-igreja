@@ -31,10 +31,6 @@
     }
 }
 
-html {
-    background-color: rgb(88, 87, 87);
-}
-
 menu {
     height: 100px;
     padding-top: 17px;
@@ -127,7 +123,7 @@ div#cultos h2 {
     background-color: white;
     color: black;
     border-radius: 20px 20px 0 0;
-    width: 314px;
+    width: 430px;
     transform: translate(-15px , -15px);
     font-family: 'agencyb';
     font-size: 56px;
@@ -160,12 +156,12 @@ div.subtitulo-dia {
 
 div.dias {
     border: 1px solid white;
-    width: 283px;
+    width: 400px;
     margin: auto;
     margin: 30px;
     border-radius: 22px;
     padding: 15px;
-    height: 715px;
+    height: 570px;
 }
 
 div#lideres {
@@ -213,6 +209,7 @@ div#lideres p {
 div#eventos {
     background-color: #ac8701;
     color: white;
+    padding: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -227,7 +224,7 @@ div#eventos h1 {
 div#eventos p {
     font-family: 'Poppins';
     font-size: 20px;
-    margin: 15px 10px 50px 10px;
+    margin: 15px 40px 50px 40px;
     text-align: justify;
     text-shadow: 0 0 5px black;
 }
@@ -236,12 +233,18 @@ div#cont-eventos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 320px;
+    width: 390px;
     margin: auto;
 }
 
+div.evento {
+    background-color: #10142e;
+    margin: 10px;
+}
+
 div.evento img {
-    width: 319px;
+    width: 390px;
+    margin: 35px;
     margin-bottom: 5px;
 }
 
@@ -375,6 +378,7 @@ div#pedidos-de-oracao button img {
 footer {
     background-color: #2b2b2b;
     color: white;
+    padding: 30px;
 }
 
 footer h1 {
@@ -406,8 +410,8 @@ footer img#logo-footer {
 }
 
 div#local {
-    margin: autoz;
-    width: 300px;
+    width: 340px;
     border-radius: 20px;
+    margin: auto;
     padding-bottom: 20px ;
 }
