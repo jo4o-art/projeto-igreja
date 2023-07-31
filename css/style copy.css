@@ -31,6 +31,10 @@
     }
 }
 
+html {
+    background-color: #7a7a7a;
+}
+
 menu {
     height: 100px;
     padding-top: 17px;
@@ -74,11 +78,19 @@ div#infundo-titulo {
     background-position: center;
 }
 
+div#gamb {
+    display: flex;
+    align-items: center;
+}
+
 header {
+    display: flex;
+    align-items: center;
     max-width: 1036px;
     height: 431px;
-    margin: 150px auto;
+    margin: auto;
     color: white;
+    text-align: center;
 }
 
 header > div#cont-titulo {
@@ -88,16 +100,16 @@ header > div#cont-titulo {
     align-items: center;
 }
 
-header > #cont-titulo > h2 {
-    font-size: 30px;
-}
-
-header h1 {
+header h2 {
     font-size: 50px;
 }
 
+header h1 {
+    font-size: 70px;
+}
+
 header h3 {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 div#cultos {
@@ -207,7 +219,7 @@ div#lideres p {
 }
 
 div#eventos {
-    background-color: #ac8701;
+    background-color: #8a6c01;
     color: white;
     padding: 20px;
     display: flex;
@@ -232,19 +244,19 @@ div#eventos p {
 div#cont-eventos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 390px;
-    margin: auto;
 }
 
 div.evento {
-    background-color: #10142e;
-    margin: 10px;
+    width: 390px;
+    height: 550px;
+    margin: auto;
+    padding: 15px;
+    display: block;
 }
 
 div.evento img {
     width: 390px;
-    margin: 35px;
+    margin: 0px;
     margin-bottom: 5px;
 }
 
