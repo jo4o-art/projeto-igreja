@@ -1,4 +1,12 @@
 @media screen and (min-width: 800px) {
+    div#convite {
+        height: 500px;
+    }
+    
+    div#convite iframe {
+        height: 415px;
+        width: 750px;
+    }
 
     header h2 {
         font-size: 70px;
@@ -14,6 +22,17 @@
 }
 
 @media screen and (min-width: 1200px) {
+    footer iframe {
+        width: 45%px;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    div#resp {
+        display: flex;
+        justify-content: space-between;
+    }
+
     header h2 {
         font-size: 100px;
     }
@@ -28,6 +47,10 @@
 }
 
 @media screen and (max-width: 460px) {
+    div#convite iframe {
+        height: 160px;
+    }
+
     header h2 {
         font-size: 30px;
     }

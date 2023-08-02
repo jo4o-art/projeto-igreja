@@ -74,7 +74,7 @@ menu > #cont-menu > ul > li {
 div#infundo-titulo {
     background-image: url(../image/bacground.jpg);
     max-width: 1583px;
-    height: 650px;
+    height: 750px;
     background-position: center;
 }
 
@@ -236,7 +236,7 @@ div#eventos h1 {
 div#eventos p {
     font-family: 'Poppins';
     font-size: 20px;
-    margin: 15px 40px 50px 40px;
+    margin: 15px 0px 50px 0px;
     text-align: justify;
     text-shadow: 0 0 5px black;
 }
@@ -270,8 +270,11 @@ div#convite {
     padding-bottom: 15px;
 }
 
-div#convite div#video-convite {
-    margin: 15px auto;
+div#convite iframe {
+    margin-top: 20px;
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
 }
 
 div#dizimos {
@@ -421,9 +424,9 @@ footer img#logo-footer {
     margin: auto;
 }
 
-div#local {
-    width: 340px;
-    border-radius: 20px;
-    margin: auto;
-    padding-bottom: 20px ;
+footer iframe {
+    height: 400px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
 }
