@@ -6,102 +6,143 @@
 @import url('https://fonts.googleapis.com/css2?family= Poppins :wght@100;300;200;400;500;600;900 & display=swap');
 
 :root {
-    .vermelho{
-        color:#73171A;
-    }
+    --vermelho: #73171a;
 
-    .cinza {
-        color: #2b2b2b;
-    }
+    --cinza: #2b2b2b;
 
-    .amarelo {
-        color: #5e5227;
-    }
+    --amarelo: #907a29;
 
-    .azul {
-        color: #10142e;
-    }
+    --azul: #10142e;
 
-    .roxo {
-        color: #1B0F1F;
-    }
+    --roxo: #1B0F1F;
 
-    .font1 {
-        font-family: 'agencyb';
-    }
+    --font1: 'agencyb';
+
+    --font2: 'Poppins';
 }
 
 html {
-    background-color: rgb(88, 87, 87);
+    scroll-behavior: smooth;
+    background-color: #7a7a7a;
 }
 
-menu {
+body {
+    overflow-x: hidden;
+}
+
+nav {
     height: 100px;
-    padding-top: 17px;
-}
-
-menu > #cont-menu {
-    max-width: 1528.5px;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
 }
 
-div#logo > img {
-    width: 100px;
-    margin-left: 17px;
+nav.active ul {
+    display: flex;
 }
 
-menu > #cont-menu > ul {
+menu img {
+    position: absolute;
+    width: 80px;
+    margin: 17px;
+}
+
+nav ul {
+    display: flex;
+    position: absolute;
+    top: 65px;
+    right: 10px;
+    width: 50vw;
+    height: 70vh;
+    background-color: rgba(10, 10, 10, 0.902);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
     display: none;
-    flex-wrap: wrap;
 }
 
-menu > #cont-menu > ul > li {
+nav a {
     color: white;
-    font-family: 'agencyb';
-    font-size: 27px;
-    padding: 10px;
+    font-family: var(--font1);
+    font-size: 25px;
+    text-decoration: none;
+    transition: .4s;
 }
 
-#menu-borguer {
-    color: white;
-    font-size: 60px;
-    margin-right: 17px;
+nav a:hover {
+    opacity: 0.4;
+}
+
+div.mobileMenu {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    transition: .5s;
+}
+
+div.mobileMenu div {
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
+    box-shadow: 0px 0px 15px #ffffff;
+}
+
+div.mobileMenu:hover {
+    transform: scale(1.2);
+}
+
+nav ul.active {
+    transform: translate3d(0);
 }
 
 div#infundo-titulo {
     background-image: url(../image/bacground.jpg);
-    max-width: 1583px;
-    height: 650px;
+    background-size: cover;
+
+    width: 100vw;
+    height: 750px;
     background-position: center;
 }
 
+div#gamb {
+    display: flex;
+    align-items: center;
+}
+
 header {
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
     max-width: 1036px;
     height: 431px;
-    margin: 150px auto;
+    margin: auto;
     color: white;
+    text-align: center;
 }
 
 header > div#cont-titulo {
-    font-family: 'agencyb';
+    font-family: var(--font1);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header > #cont-titulo > h2 {
-    font-size: 30px;
-}
-
-header h1 {
+header h2 {
     font-size: 50px;
 }
 
+header h1 {
+    font-size: 70px;
+}
+
 header h3 {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 div#cultos {
@@ -117,7 +158,7 @@ div#cont-cultos {
 }
 
 div#cultos p {
-    font-family: 'Poppins';
+    font-family: var(--font2);
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -127,27 +168,27 @@ div#cultos h2 {
     background-color: white;
     color: black;
     border-radius: 20px 20px 0 0;
-    width: 314px;
+    width: 430px;
     transform: translate(-15px , -15px);
-    font-family: 'agencyb';
+    font-family: var(--font1);
     font-size: 56px;
     text-align: center;
 }
 
 div#cultos h1 {
-    font-family: 'agencyb';
+    font-family: var(--font1);
     font-size: 75px;
     text-align: center;
     padding: 15px 0 15px 0;
 }
 
 div#cultos h3 {
-    font-family: 'agencyb';
+    font-family: var(--font1);
     font-size: 46px;
 }
 
 span.hora {
-    font-family: 'agencyb';
+    font-family: var(--font1);
     font-size: 22px;
 }
 
@@ -160,16 +201,16 @@ div.subtitulo-dia {
 
 div.dias {
     border: 1px solid white;
-    width: 283px;
+    width: 400px;
     margin: auto;
     margin: 30px;
     border-radius: 22px;
     padding: 15px;
-    height: 715px;
+    height: 570px;
 }
 
 div#lideres {
-    background-color: #2b2b2b;
+    background-color: var(--cinza);
     color: white;
     padding: 15px 25px 15px 25px;
 }
@@ -181,19 +222,19 @@ div#cont-lideres {
 }
 
 div#lideres h1 {
-    font-family: 'agencyb';
+    font-family: var(--font1);
     font-size: 75px;
     text-align: center;
     margin: 0 0 15px 0;
 }
 
 div#lideres h2 {
-    font-family: 'poppins';
+    font-family: var(--font2);
     text-align: center;
 }
 
 div#lideres p {
-    font-family: 'Poppins';
+    font-family: var(--font2);
     font-weight: 200;
     text-align: center;
 }
@@ -211,23 +252,24 @@ div#lideres p {
 }
 
 div#eventos {
-    background-color: #ac8701;
+    background-color: var(--amarelo);
     color: white;
+    padding: 20px;
     display: flex;
     flex-direction: column;
 }
 
 div#eventos h1 {
-    font-family: 'agencyb';
+    font-family: var(--font1);
     font-size: 65px;
     text-align: center;
     margin: 0 0 15px 0;
 }
 
 div#eventos p {
-    font-family: 'Poppins';
+    font-family: var(--font2);
     font-size: 20px;
-    margin: 15px 10px 50px 10px;
+    margin: 15px 0px 50px 0px;
     text-align: justify;
     text-shadow: 0 0 5px black;
 }
@@ -235,32 +277,41 @@ div#eventos p {
 div#cont-eventos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 320px;
+}
+
+div.evento {
+    width: 390px;
+    height: 550px;
     margin: auto;
+    padding: 15px;
+    display: block;
 }
 
 div.evento img {
-    width: 319px;
+    width: 390px;
+    margin: 0px;
     margin-bottom: 5px;
 }
 
 div#convite {
-    background-color: #2b2b2b;
+    background-color: var(--cinza);
     color: white;
-    font-family: 'agencyb';
+    font-family: var(--font1);
     font-size: 26px;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-div#convite div#video-convite {
-    margin: 15px auto;
+div#convite iframe {
+    margin-top: 20px;
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
 }
 
 div#dizimos {
-    background-color: #10142e;
+    background-color: var(--azul);
     color: white;
     display: flex;
     flex-direction: column;
@@ -269,19 +320,21 @@ div#dizimos {
 }
 
 div#dizimos h1 {
-    font-family: 'agencyb';
+    font-family: var(--font1);
     font-size: 60px;
     margin-bottom: 5px;
 }
 
 div#dizimos > p {
-    font-family: 'Poppins';
+    font-family: var(--font2);
     font-weight: 300;
     margin: 20px;
     margin-bottom: 10px;
 }
 
-div#dizimos button {
+div#dizimos #ofertas {
+    color: black;
+    background-color: white;
     border-radius: 15px;
     border: none;
     display: flex;
@@ -290,10 +343,20 @@ div#dizimos button {
     align-items: center;
     justify-content: center;
     margin: 15px auto;
+    gap: .5rem;
+}
+
+a#pag-financ {
+    width: 200px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
 }
 
 #ofertas p {
-    font-family: 'agencyb';
+    font-family: var(--font1);
     font-size: 37px;
     font-weight: 500;
 }
@@ -310,8 +373,9 @@ div#biblia {
     align-items: center;
 }
 
-div#biblia button {
+div#biblia #biblia-btn {
     display: block;
+    background-color: #fff;
     margin: auto;
     display: flex;
     padding: 20px;
@@ -320,7 +384,7 @@ div#biblia button {
 }
 
 div#biblia p {
-    font-family: 'agencyb';
+    font-family: var(--font1);
     font-size: 45px;
     margin-left: 10px;
 }
@@ -330,27 +394,29 @@ div#biblia img {
 }
 
 div#pedidos-de-oracao {
-    background-color: #1B0F1F;
+    background-color: var(--roxo);
     color: white;
     padding: 20px;
     padding-bottom: 40px;
 }
 
 div#pedidos-de-oracao h1 {
-    font-family: 'agencyb';
+    font-family: var(--font1);
     font-size: 55px;
     text-align: center;
 }
 
 div#pedidos-de-oracao > p {
     margin-top: 5px;
-    font-family: 'Poppins';
+    font-family: var(--font2);
     font-weight: 300;
     text-align: center;
     margin: 20px;
 }
 
-div#pedidos-de-oracao button {
+div#pedidos-de-oracao #pedido {
+    background-color: #fff;
+    color: black;
     display: flex;
     width: 300px;
     height: 65px;
@@ -362,34 +428,35 @@ div#pedidos-de-oracao button {
     border: none;
 }
 
-div#pedidos-de-oracao button p {
-    font-family: 'agencyb';
+div#pedidos-de-oracao #pedido p {
+    font-family: var(--font1);
     font-size: 40px;
     margin-left: 10px;
 }
 
-div#pedidos-de-oracao button img {
+div#pedidos-de-oracao #pedido img {
     width: 50px;
 }
 
 footer {
-    background-color: #2b2b2b;
+    background-color: var(--cinza);
     color: white;
+    padding: 30px;
 }
 
 footer h1 {
-    font-family: 'agencyb';
+    font-family: var(--font1);
     font-size: 60px;
 }
 
 footer p {
-    font-family: 'Poppins';
+    font-family: var(--font2);
     font-weight: 300;
     margin: 30px auto 30px auto;
 }
 
 footer h2 {
-    font-family: 'agencyb';
+    font-family: var(--font1);
     font-size: 35px;
 }
 
@@ -405,9 +472,9 @@ footer img#logo-footer {
     margin: auto;
 }
 
-div#local {
-    margin: autoz;
-    width: 300px;
-    border-radius: 20px;
-    padding-bottom: 20px ;
+footer iframe {
+    height: 400px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
 }

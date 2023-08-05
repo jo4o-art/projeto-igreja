@@ -7,7 +7,7 @@
     <title>IEQ-Cariri</title>
     <link rel="shortcut icon" href="image/favicon..png" type="image/x-icon">
     <link rel="stylesheet" href="./css/zero.css">
-    <link rel="stylesheet" href="./css/style copy.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media-query.css">
 
 </head>
@@ -16,20 +16,20 @@
     <menu>
         <a href="#"><img src="image/logo-footer.png" alt="logo-menu"></a>
         <nav id="nav">
-            <button id="btn-mobile">
+            <div id="btn-mobile">
                 <div class="mobileMenu">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
-            </button>
+            </div>
         
             <ul class="Navbar">
                 <li><a href="#cultos">CULTOS</a></li>
-                <li><a href="#dizimos">FINACEIRO</a></li>
                 <li><a href="#eventos">EVENTOS</a></li>
-                <li><a href="#pedidos-de-oracao">PEDIDOS DE ORAÇÃO</a></li>
+                <li><a href="#dizimos">FINACEIRO</a></li>
                 <li><a href="#biblia">BÍBLIA</a></li>
+                <li><a href="#pedidos-de-oracao">PEDIDOS DE ORAÇÃO</a></li>
             </ul>
         </nav>
     </menu>
@@ -162,22 +162,24 @@
         <div id="dizimos">
             <h1>DÍZIMOS E OFERTAS</h1>
             <p>Devolva seu dízimo e entregue sua oferta para o reino de Deus</p>
-            <button id="ofertas"><img src="image/enviar-icone.png" alt="icone-enviar">
-                <p id="enviar">ENVIAR</p>
-            </button>
+            <a href="financeiro.html" id="pag-financ">
+                <div id="ofertas"><img src="image/enviar-icone.png" alt="icone-enviar">
+                    <p id="enviar">ENVIAR</p>
+                </div>
+            </a>
         </div>
         <div id="biblia">
-            <button id="biblia"><img src="image/biblia-icone.png" alt="">
+            <div id="biblia-btn"><img src="image/biblia-icone.png" alt="">
                 <p>Biblia online</p>
-            </button>
+            </div>
         </div>
         <div id="pedidos-de-oracao">
             <h1>PEDIDOS DE ORAÇÃO</h1>
             <p>Está presisando de uma oração? Deixe aqui seu pedido</p>
-            <button id="pedido">
+            <div id="pedido">
                 <img src="image/pedido-icone.png" alt="pedido-icone">
                 <p>FAZER PEDIDO</p>
-            </button>
+            </div>
         </div>
         <footer id="footer">
             <img id="logo-footer" src="image/logo-footer.png" alt="logo-footer">

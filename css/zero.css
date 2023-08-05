@@ -1,8 +1,27 @@
-ul{
+ul {
     list-style-type: none;
 }
 
 * {
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--cinza);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(96, 96, 96);
+    border-radius: 20px;
+    border: none;
 }
