@@ -46,9 +46,14 @@ nav img:hover {
 
 header {
     background-color: rgba(255, 255, 255, 0.561);
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: auto;
-    width: 50vw;
-    border-radius: 35px;
+    width: 350px;
+    height: 685px;
+    border-radius: 25px;
     text-align: center;
     padding: 20px;
 }
@@ -71,7 +76,7 @@ button {
     background-color: black;
     color: white;
     border: none;
-    width: 35vw;
+    width: 250px;
     height: 8vh;
     border-radius: 25px;
     font-size: 40px;
@@ -80,4 +85,8 @@ button {
     align-items: center;
     margin: auto;
     justify-content: center;
+}
+
+botton:hover {
+    
 }
