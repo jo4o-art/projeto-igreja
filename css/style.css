@@ -44,8 +44,14 @@ nav.active ul {
     display: flex;
 }
 
-menu img {
+menu > a {
+    display: block;
     position: absolute;
+    z-index: 1;
+}
+
+menu img {
+    position: relative;
     width: 80px;
     margin: 17px;
 }
@@ -70,7 +76,7 @@ nav a {
     font-family: var(--font1);
     font-size: 25px;
     text-decoration: none;
-    transition: .4s;
+    transition: .2s;
 }
 
 nav a:hover {
@@ -94,11 +100,7 @@ div.mobileMenu div {
 }
 
 div.mobileMenu:hover {
-    transform: scale(1.2);
-}
-
-nav ul.active {
-    transform: translate3d(0);
+    transform: scale(1.1);
 }
 
 div#infundo-titulo {
@@ -240,7 +242,7 @@ div#lideres p {
 }
 
 .lideres {
-    margin: 20px;
+    margin: 50px;
     margin-top: 0;
 }
 
@@ -291,6 +293,7 @@ div.evento img {
     width: 390px;
     margin: 0px;
     margin-bottom: 5px;
+    border-radius: 8px;
 }
 
 div#convite {
@@ -316,7 +319,7 @@ div#dizimos {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 15px;
+    padding: 30px 15px;
 }
 
 div#dizimos h1 {
@@ -373,8 +376,11 @@ div#biblia {
     align-items: center;
 }
 
-div#biblia #biblia-btn {
-    display: block;
+#biblia a {
+    margin: auto;
+}
+
+#biblia-btn {
     background-color: #fff;
     margin: auto;
     display: flex;

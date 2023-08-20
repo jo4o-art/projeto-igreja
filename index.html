@@ -14,7 +14,9 @@
 
 <body>
     <menu>
-        <a href="#"><img src="image/logo-footer.png" alt="logo-menu"></a>
+        <a href="index.html" id="logo-menu">
+            <img src="image/logo-footer.png" alt="logo-menu">
+        </a>
         <nav id="nav">
             <div id="btn-mobile">
                 <div class="mobileMenu">
@@ -25,11 +27,11 @@
             </div>
         
             <ul class="Navbar">
-                <li><a href="#cultos">CULTOS</a></li>
-                <li><a href="#eventos">EVENTOS</a></li>
-                <li><a href="#dizimos">FINACEIRO</a></li>
-                <li><a href="#biblia">BÍBLIA</a></li>
-                <li><a href="#pedidos-de-oracao">PEDIDOS DE ORAÇÃO</a></li>
+                <li><a href="#cultos" class="menores"><p>CULTOS</p></a></li>
+                <li><a href="#eventos" class="menores"><p>EVENTOS</p></a></li>
+                <li><a href="#dizimos" class="menores"><p>FINACEIRO</p></a></li>
+                <li><a href="#biblia" class="menores"><p>BÍBLIA</p></a></li>
+                <li><a href="#pedidos-de-oracao" class="maior"><p>PEDIDOS DE ORAÇÃO</p></a></li>
             </ul>
         </nav>
     </menu>
@@ -105,12 +107,17 @@
                 <div class="lideres">
                     <img src="image/luiza-ilustracao.png" alt="luiza-ilustracao">
                     <h2>Pastora Luiza</h2>
-                    <p>Pastora, presidente do ministério, lider da igreja</p>
+                    <p>Diretora da igreja</p>
                 </div>
                 <div class="lideres">
                     <img src="image/noemia-ilustracao.png" alt="noemia-ilustracao">
                     <h2>Irmã Noêmia</h2>
-                    <p>Vice presidente da igreja, lider de mulheres, membro do louvor</p>
+                    <p>Vice diretora da igreja</p>
+                </div>
+                <div class="lideres">
+                    <img src="image/noemia-ilustracao.png" alt="noemia-ilustracao">
+                    <h2>Pastora Luciana</h2>
+                    <p>Pastora alxiliar</p>
                 </div>
             </div>
         </div>
@@ -169,17 +176,22 @@
             </a>
         </div>
         <div id="biblia">
-            <div id="biblia-btn"><img src="image/biblia-icone.png" alt="">
-                <p>Biblia online</p>
-            </div>
+            <a href="biblia.html">
+                <div id="biblia-btn">
+                    <img src="image/biblia-icone.png" alt="">
+                    <p>Biblia online</p>
+                </div>
+            </a>
         </div>
         <div id="pedidos-de-oracao">
             <h1>PEDIDOS DE ORAÇÃO</h1>
             <p>Está presisando de uma oração? Deixe aqui seu pedido</p>
-            <div id="pedido">
-                <img src="image/pedido-icone.png" alt="pedido-icone">
-                <p>FAZER PEDIDO</p>
-            </div>
+                <a href="pedido.html">
+                    <div id="pedido">
+                        <img src="image/pedido-icone.png" alt="pedido-icone">
+                        <p>FAZER PEDIDO</p>
+                    </div>
+                </a>
         </div>
         <footer id="footer">
             <img id="logo-footer" src="image/logo-footer.png" alt="logo-footer">

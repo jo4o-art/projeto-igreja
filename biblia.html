@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/zero.css">
+    <link rel="stylesheet" href="css/biblia.css">
+    <title>Bíblia</title>
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        window.onload = function () {
+            var iGugaBibleContainer = document.getElementById("iGugaBibleContainer");
+
+            if (typeof iGugaBibleContainer !== "undefined" && iGugaBibleContainer !== null) {
+
+                /* Link da Bíblia Online iGuga Personalizada utilizando HTTPS */
+                var iGugaBibleCustomLink = 'https://www.iguga.org/bible/searchFrame/ID/1612dca508867f6102edca7d9175281a';
+
+                var iGugaBibleFrameSource = iGugaBibleCustomLink + '?fromUrl=' + encodeURIComponent(document.location.href);
+
+                iGugaBibleContainer.innerHTML = '<iframe id="iGugaBibleFrame"src="' + iGugaBibleFrameSource + '" style="height: 1000px; width: 100%;" scrolling="no" frameborder="0" allowtransparency="true"></iframe>';
+            }
+        }
+        igPostMessage.receiveMessage(function (event) {
+            if ((!isNaN(event.data)) && (event.data > 0)) {
+                var iGugaBibleFrame = document.getElementById("iGugaBibleFrame");
+
+                if (typeof iGugaBibleFrame !== "undefined" && iGugaBibleFrame !== null) {
+                    iGugaBibleFrame.style.height = '100%';
+                    iGugaBibleContainer.style.height = event.data + 'px';
+                }
+            }
+        }, 'https://www.iguga.org');
+        /*]]>*/
+    </script>
+</head>
+
+<body>
+    <h1 style="padding: 10px;">Bíblia Online</h1>
+    <div id="iGugaBibleContainer"><a href="https://www.iguga.org">Bíblia Online iGuga</a></div>
+</body>
+
+</html>
