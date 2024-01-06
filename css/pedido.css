@@ -21,8 +21,8 @@
     --font2: 'Poppins';
 }
 
-body {
-    padding-bottom: 50px;
+html,body {
+    scroll-behavior: smooth;
 }
 
 menu {
@@ -92,9 +92,9 @@ button#fazer-pedido {
 #pedido {
     background-color: #fff;
     color: black;
-    display: flex;
     width: 100%;
     height: 50px;
+    display: flex;
     align-items: center;
     margin: 15px auto 0px auto;
     justify-content: center;
@@ -105,8 +105,8 @@ button#fazer-pedido {
 #pedido p {
     font-family: var(--font1);
     font-size: 45px;
-    margin-left: 10px;
 }
+
 
 .pedido-table {
     background: none;
@@ -162,20 +162,100 @@ table tr td.motivo {
     margin: auto;
 }
 
+#aba-pedido {
+    /* background-color: rgb(60, 60, 60); */
+    color: black;
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+
+#aba-pedido h3#seu-pedido {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-family: var(--font1);
+    font-size: 45px;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+#formulario {
+    padding: 20px;
+    font-family: var(--font2);
+    color: #fff;
+    text-align: center;
+}
+
+#formulario label {
+    font-size: 20px;
+}
+
+#formulario input {
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-family: var(--font2);
+    margin-bottom: 25px;
+}
+
+#area-pedido {
+    border-radius: 10px;
+    border: none;
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    font-family: var(--font2);
+}
+
+#formulario button {
+    background-color: var(--roxo);
+    width: 415px;
+    margin: 25px auto;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: var(--font1);
+    font-size: 35px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#formulario button:hover {
+    transform: scale(1.03);
+    background-color: #291830;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 15px;
+}
+
 @media screen and (min-width: 800px) {
     .pedido-table {
         width: 41vw;
         margin-top: 30px;
     }
-
+    
     #container {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
-
+    
     .pedido-table button {
         font-size: 16px;
+    }
+
+    #formulario input {
+        width: 700px;
+    }
+
+    #area-pedido {
+        width: 700px;
     }
 }
 
