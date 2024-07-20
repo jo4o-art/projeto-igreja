@@ -147,10 +147,21 @@ header h3 {
     font-size: 50px;
 }
 
+main {
+    width: 100vw;
+}
+
 div#cultos {
     background-color: #73171A;
     color: white;
     padding-bottom: 10px;
+}
+
+div#cultos h1 {
+    font-family: var(--font1);
+    font-size: 75px;
+    text-align: center;
+    padding: 15px 0 15px 0;
 }
 
 div#cont-cultos {
@@ -159,7 +170,14 @@ div#cont-cultos {
     justify-content: center;
 }
 
-div#cultos p {
+div#cont-cultos .flayer {
+    width: 430px;
+    margin: 0 15px 30px 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.35);
+}
+
+/* div#cultos p {
     font-family: var(--font2);
     font-size: 20px;
     margin-bottom: 20px;
@@ -177,12 +195,6 @@ div#cultos h2 {
     text-align: center;
 }
 
-div#cultos h1 {
-    font-family: var(--font1);
-    font-size: 75px;
-    text-align: center;
-    padding: 15px 0 15px 0;
-}
 
 div#cultos h3 {
     font-family: var(--font1);
@@ -209,7 +221,7 @@ div.dias {
     border-radius: 22px;
     padding: 15px;
     height: 570px;
-}
+} */
 
 div#lideres {
     background-color: var(--cinza);
