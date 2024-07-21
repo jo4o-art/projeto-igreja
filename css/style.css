@@ -260,9 +260,10 @@ div#lideres p {
 
 .lideres img {
     display: block;
+    width: 300px;
     margin: 40px auto 40px auto;
     border-radius: 50%;
-    box-shadow: 0 0 20px #A9ABAE;
+    box-shadow: 0 0 20px #606060;
 }
 
 div#eventos {
