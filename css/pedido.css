@@ -90,6 +90,7 @@ button#fazer-pedido {
 }
 
 #pedido {
+    /* display: none; */
     background-color: #fff;
     color: black;
     width: 100%;

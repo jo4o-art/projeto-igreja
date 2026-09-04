@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -21,4 +21,219 @@
         <button>Copiar Código</button>
     </header>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Dízimos e ofertas - IEQ Cariri"
+    >
+
+    <title>Dízimos e Ofertas | IEQ Cariri</title>
+
+    <link rel="stylesheet" href="/css/financeiro.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+
+<body>
+
+    <!-- ==============================
+         CABEÇALHO
+    =============================== -->
+
+    <header class="site-header">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            <img
+                src="image/logo-footer.png"
+                alt="IEQ Cariri"
+            >
+        </a>
+
+
+        <a
+            href="index.html"
+            class="back-button"
+        >
+            ← Voltar
+        </a>
+
+    </header>
+
+
+
+    <!-- ==============================
+         CONTEÚDO PRINCIPAL
+    =============================== -->
+
+    <main>
+
+        <section class="pix-section">
+
+            <div class="pix-container">
+
+
+                <!-- TEXTO -->
+
+                <div class="pix-content">
+
+                    <span class="section-label">
+                        DÍZIMOS E OFERTAS
+                    </span>
+
+
+                    <h1>
+                        Contribua com a obra
+                    </h1>
+
+
+                    <p class="description">
+                        Sua contribuição ajuda a igreja a continuar
+                        realizando sua missão e levando a Palavra
+                        de Deus a mais pessoas.
+                    </p>
+
+
+
+                    <!-- CARTÃO PIX -->
+
+                    <div class="pix-card">
+
+                        <div class="pix-logo">
+
+                            <img src="image/pix-logo.png" alt="pix">
+
+                        </div>
+
+
+                        <span class="pix-title">
+                            CHAVE PIX
+                        </span>
+
+
+                        <div class="pix-key-box">
+
+                            <span id="pixKey">
+                                878.287.402-63
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            onclick="copiarTexto()"
+                            type="button"
+                            id="copyPix"
+                            class="copy-button"
+                        >
+                            <span id="copyIcon">⧉</span>
+
+                            <span id="copyText">
+                                COPIAR CÓDIGO
+                            </span>
+                        </button>
+
+
+                        <div
+                            id="copyMessage"
+                            class="copy-message"
+                            aria-live="polite"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- QR CODE -->
+
+                <div class="qr-area">
+
+                    <div class="qr-card">
+
+                        <div class="qr-header">
+
+                            <span>
+                                PAGUE PELO PIX
+                            </span>
+
+                        </div>
+
+
+                        <div class="qr-image">
+
+                            <img
+                                src="image/qr-code-pix.jpeg"
+                                alt="QR Code para contribuição via Pix"
+                            >
+
+                        </div>
+
+
+                        <p>
+                            Aponte a câmera do seu celular
+                            para o QR Code.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==============================
+         RODAPÉ
+    =============================== -->
+
+    <footer class="footer">
+
+        <p>
+            © <span id="currentYear"></span>
+            IEQ Cariri. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+
+    <script src="/js/financeiro.js"></script>
+
+</body>
+
 </html>
